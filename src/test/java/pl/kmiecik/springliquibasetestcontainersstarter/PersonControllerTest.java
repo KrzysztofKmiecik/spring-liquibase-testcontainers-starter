@@ -13,10 +13,9 @@ import static org.hamcrest.Matchers.hasSize;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 
 
-@SpringBootTest
+
 @AutoConfigureMockMvc
-@ActiveProfiles("test")
-public class PersonControllerTest {
+public class PersonControllerTest extends BaseForIntegrationTest{
 
     @Autowired
     private MockMvc mockMvc;
